@@ -18,8 +18,11 @@ local map=gridmap:createMap("map") -- Specify which map to load
 </code>
 
 The map file that you load must be exported as a .lua file. To do that, in Tiled, when you've finished your map, go to File > Export As. In the "Files of Type" field, specify "Lua files (*.lua)."
-Tiled instructions:
+
+
+###Tiled instructions:
 In Tiled, you can, of course, specify properties for a layer or tileset.
+
 Properties:
 You can add any property you want to a tileset, but it will not change the tileset in any way when you load it. It will simply add it to the tileset's property table.
 
@@ -28,11 +31,15 @@ You can also add any property to a layer.
 Properties beginning with "Physics:" will be passed to the physics properties when a tile in the layer is created.
 Example:
 Properties of the layer you made in Tiled:
+
+
 <code>
 Physics:existent = true
 </code>
 
 Existent is true = the layer has physics or false = does not have physics)
+
+
 <code>
 Physics:bounce = 0.3
 Physics:isSensor = true
@@ -43,6 +50,8 @@ Properties beginning with "Layer:" will be passed to the layer itself, instead o
 
 Example:
 Properties of the layer you made in Tiled:
+
+
 <code>
 Layer:rotation = 90
 Layer:x = 30
@@ -62,7 +71,10 @@ local chosenTile=map:getTile(1, 3, 3)
 --X - number, the x (in tiles) of the tile you want
 --Y - number, the y (in tiles) of the tile you want
 </code>
+
 Most of the values are inside of the map. Such as:
+
+
 <code>
 map.layers = a table holding each layer
 map.layers[1].tiles = the layer's tile table
