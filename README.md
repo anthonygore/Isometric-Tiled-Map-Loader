@@ -1,3 +1,5 @@
+(Taken from http://developer.coronalabs.com/code/gridmap by Caleb P)
+
 gridmap
 =======
 
