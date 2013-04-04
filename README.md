@@ -12,9 +12,8 @@ Tiles are each individual sprites.
 ### Usage:
 ---------------------
 <code>
-local gridmap=require("gridmap") -- Load the library
-
-local map=gridmap:createMap("map") -- Specify which map to load
+local gridmap=require("gridmap") -- Load the library  
+local map=gridmap:createMap("map") -- Specify which map to load  
 </code>
 
 The map file that you load must be exported as a .lua file. To do that, in Tiled, when you've finished your map, go to File > Export As. In the "Files of Type" field, specify "Lua files (*.lua)."
@@ -34,15 +33,15 @@ Properties of the layer you made in Tiled:
 
 
 <code>
-Physics:existent = true
+Physics:existent = true  
 </code>
 
 Existent is true = the layer has physics or false = does not have physics)
 
 
 <code>
-Physics:bounce = 0.3
-Physics:isSensor = true
+Physics:bounce = 0.3  
+Physics:isSensor = true  
 </code>
 
 You can make whatever params you wish, so long as they can be put inside a normal physics params table: physics.addBody(obj, "kinematic", {params table} )
@@ -53,9 +52,9 @@ Properties of the layer you made in Tiled:
 
 
 <code>
-Layer:rotation = 90
-Layer:x = 30
-Layer:y = 90
+Layer:rotation = 90  
+Layer:x = 30  
+Layer:y = 90  
 </code>
 
 
@@ -65,17 +64,17 @@ Properties beginning with "Tiles:" are the same as properties beginning with "La
 To access a single tile, use this:
 
 <code>
-local chosenTile=map:getTile(1, 3, 3)
---Parameters:
---Layer - number, the layer the tile you want is in
---X - number, the x (in tiles) of the tile you want
---Y - number, the y (in tiles) of the tile you want
+local chosenTile=map:getTile(1, 3, 3)  
+--Parameters:  
+--Layer - number, the layer the tile you want is in  
+--X - number, the x (in tiles) of the tile you want  
+--Y - number, the y (in tiles) of the tile you want  
 </code>
 
 Most of the values are inside of the map. Such as:
 
 
 <code>
-map.layers = a table holding each layer
-map.layers[1].tiles = the layer's tile table
+map.layers = a table holding each layer  
+map.layers[1].tiles = the layer's tile table  
 </code>
