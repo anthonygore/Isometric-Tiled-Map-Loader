@@ -1,7 +1,7 @@
-Forked from https://github.com/jasonbradley/gridmap
+Isometric Tiled Map Loader (Corona SDK)
+=======================================
 
-Isometric Tiled Map Loader (Lua)
-================================
+Loads isometric (2.5D) maps from Tiled Map Editor (http://www.mapeditor.org/) into Corona SDK.
 
 Works the same as the original project, except you can load isometric maps as well.
 
